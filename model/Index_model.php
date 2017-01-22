@@ -9,7 +9,7 @@ class Index_model extends Model
 	
 	public function MyModel($a, $b)
 	{
-		return $this->Select($a, $b);
+		return $a*$b;
 	}
 	
 	
