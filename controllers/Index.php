@@ -5,6 +5,9 @@ class Index extends Controller
 	function __construct($params)
 	{
 		parent::__construct();
+		$this->view->controller = "Index2";
+		require_once 'model/Index_model.php';
+		$this->model = new Index_model();
 		
 		
 		$action = 'Sumek';
@@ -33,7 +36,9 @@ class Index extends Controller
 
 	private function Sumek($co,$time)
 	{
-		echo 'Nowinki - '.$co.' = '.$time;
+		echo 'Nowinki - '.$co.' = '.$time .'<br>';
+		//echo $this->model -> MyModel('*', 'user');
+		$this->view->Render();
 	}
 
 }
