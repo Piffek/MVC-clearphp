@@ -7,9 +7,11 @@ class Index_model extends Model
 		parent::__construct();
 	}
 	
-	public function MyModel($a, $b)
+	public function MyModel($select, $from)
 	{
-		return $a*$b;
+		$mysqlp = $this-> Select($select, $from);
+		return $mysqlp;
+
 	}
 	
 	
