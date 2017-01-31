@@ -38,7 +38,7 @@ class Index extends Controller
 	private function Sumek($co,$time)
 	{
 		$this->view->nowinki = 'Nowinki - '.$co.' = '.$time .'<br>';
-		$this->view->mymodeli = $this->model -> MyModel('*', 'users');
+		$this->view->mymodeli = $this->model -> MyModel('*', 'users','id=50');
 		$this->view->Render();
 	}
 

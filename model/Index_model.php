@@ -7,9 +7,9 @@ class Index_model extends Model
 		parent::__construct();
 	}
 	
-	public function MyModel($select, $from)
+	public function MyModel($select, $from,$where)
 	{
-		$mysqlp = $this-> Select($select, $from);
+		$mysqlp = $this-> Select($select, $from,$where);
 		return $mysqlp;
 
 	}
